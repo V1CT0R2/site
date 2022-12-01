@@ -1,0 +1,63 @@
+.body{
+    background-color: #4242;
+    background-image: linear-gradient(to bottom right, rgb(14, 54, 100), rgb(17, 83, 78), rgb(41, 116, 106), rgb(167, 197, 138));
+}
+@media screen and (max-width: 720px) {
+    div h1{
+        font-size: medium;
+    }
+    div > h3{
+        font-size: 10px;
+        margin:0;
+    }
+}
+.title{
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.collapse{
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#r{
+    box-shadow: inset 1px 2px 8px rgba(255, 255, 255, 0.1), 4px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4em;
+   
+}
+.alert{
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.3);
+}
+svg#freepik_stories-questions:not(.animated) .animable {
+    opacity: 0;
+}
+
+svg#freepik_stories-questions.animated #freepik--question-mark--inject-8 {
+    animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideDown, 1.5s Infinite linear floating;
+    animation-delay: 0s, 1s;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floating {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
